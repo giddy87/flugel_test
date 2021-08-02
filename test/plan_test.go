@@ -8,7 +8,7 @@ import  (
 
 func TestInitAndPlan(t *testing.T) {
 terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
-		TerraformDir: "../test1",
+		TerraformDir: "../task1",
 	})
  terraform.InitAndPlan(t, terraformOptions)
  tags := terraform.OutputMap(t, terraformOptions,"tags")

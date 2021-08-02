@@ -17,5 +17,6 @@ jobs:
         working-directory: test
         run: go test -v 
         env:
-          TF_VAR_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-          TF_VAR_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
+          AWS_DEFAULT_REGION:  ${{ secrets.REGION }}
