@@ -7,3 +7,10 @@ resource "aws_instance" "dev" {
 
 }
 
+output "public_ip" {
+  value = aws_instance.dev.public_ip
+}
+
+output "tags" {
+  value = aws_instance.dev.tags
+}
