@@ -26,6 +26,8 @@ For this relatively lean build, the resources been provisioned are single EC2 in
 
 
 **Testing Infrastructure** 
+The tests are written in the test\ directory .
+
 **Locally**:
 To Validate Infrastructure using Terratest:
 
