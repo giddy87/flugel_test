@@ -11,7 +11,7 @@ Infrastructure as Code Task:
 # task 1
 
 Provisioning an EC2 instance and s3 bucket with tags **Name=Flugel, Owner=InfraTeam**.
-The terraform scripts are [here](https://github.com/giddy87/flugel_test/tree/test1/task1)
+The terraform scripts are [here](https://github.com/giddy87/flugel_test/blob/main/task1)
 
 The aws provider is used and hence AWS credentials must be set as variables in addition to other variables required for the build.
 
@@ -27,7 +27,7 @@ For this relatively lean build, the resources been provisioned are single EC2 in
 # task 2
 Provisioning an EC2 instance and s3 bucket with tags **Name=Flugel, Owner=InfraTeam**.
 Provisioning a cluster of 2 EC2 instances behind an ALB running Nginx, serving a static file generated using a Python script. and the underlying infrastructure - Networks, igw, security groups, 
-The terraform scripts are [here](https://github.com/giddy87/flugel_test/tree/test1/task1)
+The terraform scripts are [here](https://github.com/giddy87/flugel_test/blob/main/task2)
 | Variables | DEFAULT |
 |--|--|
 | AWS_SECRET_ACCESS_KEY |  ''|
