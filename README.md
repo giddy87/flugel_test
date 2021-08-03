@@ -21,8 +21,9 @@ The aws provider is used and hence AWS credentials must be set as variables in a
 |  AWS_SECRET_ACCESS_KEY| '' |
 |AWS_DEFAULT_REGION|us-east-2|
 |  ami| ami-09862fadec6997084 |
+
 **Building Infrastructure:**
-For this relatively lean build, the resources been provisioned are single EC2 instance, Single S3 bucket, and an ssh key.
+For this relatively lean build, the resources being provisioned are 1 EC2 instance, 1 S3 bucket, and an ssh key.
 
 # task 2
 Provisioning an EC2 instance and s3 bucket with tags **Name=Flugel, Owner=InfraTeam**.
