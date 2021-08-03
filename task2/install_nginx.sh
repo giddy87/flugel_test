@@ -7,9 +7,7 @@ sudo apt install -y python3
 {
         echo 'f = open("index.html","w")'
         echo 'message = """<html>'
-        echo '<body><p>Flugel Test</p>'
-        echo '<p>Tags are:</p>'
-        echo '<p>Name : Flugel</p>'
+        echo '<body><p>Name : Flugel</p>'
         echo '<p> Owner: InfraTeam</P>'  
         echo '</body>'
         echo '</html>"""'

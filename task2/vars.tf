@@ -6,9 +6,6 @@ variable "PATH_TO_PUBLIC_KEY" {
 default = "flugel.pub"
 }
 
-variable "PATH_TO_PRIVATE_KEY" {
-default = "mykey"
-}
 
 variable "instance_count" {
 default = "2"
@@ -19,7 +16,7 @@ default = "t2.micro"
 }
 
 variable "ami" {
-default = ""
+default = "ami-09862fadec6997084"
 }
 
 variable "az_a"{
