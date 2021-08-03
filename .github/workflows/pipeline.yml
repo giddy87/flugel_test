@@ -2,7 +2,7 @@ name: Fluel Tests
 on: push
 jobs:
   go-tests:
-    name: Validate Infrastructure for Test1
+    name: Tetsing Flugel application Infrastructure
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
