@@ -16,7 +16,7 @@ jobs:
       - name: Run Go Tests for Task1
         working-directory: test
         run: go test -v -run TestTask1Plan
-#        run: go test -v -run Test
+#        run: go test -v -run TestTagsValidation
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
@@ -24,7 +24,7 @@ jobs:
       - name: Run Go Tests for Task2
         working-directory: test
         run: go test -v -run TestTask2Plan
-#        run: go test -v -run Test
+#        run: go test -v -run TestTask2ApplicationReachability 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}

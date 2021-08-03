@@ -1,15 +1,3 @@
-variable "ACCESS_KEY"{
-default= ""
-}
-
-variable "SECRET_KEY"{
-default= ""
-}
-
-variable "AWS_REGION" {
-default = "us-east-2"
-}
-
 variable "PATH_TO_PUBLIC_KEY" {
 default = "flugel.pub"
 }
