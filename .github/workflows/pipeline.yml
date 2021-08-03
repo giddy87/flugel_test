@@ -2,7 +2,7 @@ name: Fluel Tests
 on: push
 jobs:
   go-tests:
-    name: Validate Infrastructure for Test1
+    name: Tetsing Flugel application Infrastructure
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -13,9 +13,18 @@ jobs:
       - name: Download Go Modules
         working-directory: test
         run: go mod download
-      - name: Run Go Tests
+      - name: Run Go Tests for Task1
         working-directory: test
-        run: go test -v 
+        run: go test -v -run TestTask1Plan
+#        run: go test -v -run TestTagsValidation
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
+          AWS_DEFAULT_REGION:  ${{ secrets.REGION }}
+      - name: Run Go Tests for Task2
+        working-directory: test
+        run: go test -v -run TestTask2Plan
+#        run: go test -v -run TestTask2ApplicationReachability 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
