@@ -41,10 +41,12 @@ The terraform scripts are [here](https://github.com/giddy87/flugel_test/tree/tes
 
 
 
-**Testing Infrastructure (Terratest)**
+
+# Testing Infrastructure (Terratest)
 The tests are written in the test\ directory .
 The entire tests consists of 4 functions
 [TestTask1Plan](https://github.com/giddy87/flugel_test/blob/main/test/task1_test.go) : This test initializes terraform and plans the Infrastructure for task 1, while failing if error.
+
 [TestTagsValidation](https://github.com/giddy87/flugel_test/blob/main/test/task1_test.go): This test applies(deploys) the Iac scripts, checks that the provisioned resources have tags that match the conditions and then deletes all resources after test completion.
 
 [TestTask2Plan:](https://github.com/giddy87/flugel_test/blob/main/test/task2_test.go)  This test initializes terraform and plans the Infrastructure for task 2, while failing if error.
