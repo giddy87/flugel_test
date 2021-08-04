@@ -2,7 +2,7 @@ name: Fluel Tests
 on: push
 jobs:
   go-tests:
-    name: Run Go Unit Tests
+    name: Validate Infrastructure for Test1
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -17,5 +17,6 @@ jobs:
         working-directory: test
         run: go test -v 
         env:
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY }}
+          AWS_DEFAULT_REGION:  ${{ secrets.REGION }}
